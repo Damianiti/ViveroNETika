@@ -1,0 +1,221 @@
+/* ==========================================================
+   ESTILOS GLOBALES - VIVERO DE EMPRESAS
+   ========================================================== */
+
+:root {
+    --color-principal: #0077b6;
+    --color-secundario: #00b4d8;
+    --color-fondo: #f1f5f9;
+    --color-texto: #333;
+    --color-blanco: #fff;
+    --color-footer: #023e8a;
+    --color-hover: #90e0ef;
+    --sombra: 0 4px 12px rgba(0,0,0,0.15);
+    --fuente: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================
+   CABECERA Y MENÚ SUPERIOR
+   ========================================================== */
+
+header {
+    background: linear-gradient(90deg, var(--color-principal), var(--color-secundario));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    box-shadow: var(--sombra);
+}
+
+.logo img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.08);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--color-hover);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.activo::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: var(--color-hover);
+}
+
+/* ==========================================================
+   SECCIÓN PRINCIPAL
+   ========================================================== */
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: var(--color-secundario);
+    margin-top: 0;
+}
+
+article {
+    background: var(--color-blanco);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.imagen-centro {
+    display: block;
+    margin: 10px auto;
+    max-width: 220px;
+    border-radius: 8px;
+}
+
+/* ==========================================================
+   FORMULARIO DE CONTACTO (Hecho por [Alumno 5])
+   ========================================================== */
+
+.formulario-contacto {
+    background: var(--color-blanco);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-family: var(--fuente);
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.3);
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--color-principal), var(--color-secundario));
+    color: var(--color-blanco);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, var(--color-secundario), var(--color-principal));
+    transform: scale(1.03);
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.redes {
+    margin-top: 10px;
+}
+
+.redes img {
+    height: 26px;
+    margin: 0 6px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+}
+
+.redes img:hover {
+    transform: scale(1.15);
+}
