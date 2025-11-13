@@ -1,6 +1,4 @@
-/* ==========================================================
-   ESTILOS GLOBALES - VIVERO DE EMPRESAS
-   ========================================================== */
+/* ESTILOS GLOBALES - VIVERO DE EMPRESAS */
 
 :root {
     --color-principal: #0077b6;
@@ -22,9 +20,7 @@ body {
     padding: 0;
 }
 
-/* ==========================================================
-   CABECERA Y MENÚ SUPERIOR
-   ========================================================== */
+/* CABECERA Y MENÚ SUPERIOR */
 
 header {
     background: linear-gradient(90deg, var(--color-principal), var(--color-secundario));
@@ -36,7 +32,7 @@ header {
 }
 
 .logo img {
-    height: 60px;
+    height: 200px;
     transition: transform 0.3s ease;
 }
 
@@ -81,9 +77,7 @@ nav a:hover {
     color: var(--color-hover);
 }
 
-/* ==========================================================
-   SECCIÓN PRINCIPAL
-   ========================================================== */
+/* SECCIÓN PRINCIPAL */
 
 main {
     max-width: 1100px;
@@ -125,9 +119,7 @@ article:hover {
     border-radius: 8px;
 }
 
-/* ==========================================================
-   FORMULARIO DE CONTACTO (Hecho por [Alumno 5])
-   ========================================================== */
+/* FORMULARIO DE CONTACTO */
 
 .formulario-contacto {
     background: var(--color-blanco);
@@ -178,9 +170,7 @@ button:hover {
     transform: scale(1.03);
 }
 
-/* ==========================================================
-   FOOTER
-   ========================================================== */
+/* PIE DE PÁGINA */
 
 footer {
     background-color: var(--color-footer);

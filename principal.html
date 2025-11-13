@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivero de Empresas - Inicio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ImpulsaNETika</title>
+  <link rel="stylesheet" href="css/nuevostylo.css" />
 </head>
 <body>
-    <!-- ===================== ENCABEZADO ===================== -->
-    <header>
-        <a href="inicio.html" class="logo">
-            <img src="img/logo-vivero.png" alt="Logo del vivero">
+    <!-- ENCABEZADO -->
+    <header class="Encabezado">
+        <a href="principal.html" class="logo">
+        <img src="img/LogoVivero.png" alt="Logo vivero" />
         </a>
-        <nav>
+        <nav class="menu">
             <ul>
-                <li><a href="principal.html">Inicio</a></li>
-                <li><a href="index.html">¿Qué ofrecemos?</a></li>
+                <li><a href="principal.html">¿Qué ofrecemos?</a></li>
                 <li><a href="empresas.html">Empresas</a></li>
                 <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
                 <li><a href="ofertas.html">Ofertas de trabajo</a></li>
@@ -24,47 +23,53 @@
         </nav>
     </header>
 
-    <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
-    <main>
-        <section class="portada">
-            <h1>Bienvenido al Vivero de Empresas</h1>
-            <p>Un espacio para el crecimiento, la innovación y el emprendimiento tecnológico.</p>
-            
-            <div class="menu-tarjetas">
-                <a href="index.html" class="tarjeta">
-                    <h2>¿Qué ofrecemos?</h2>
-                    <p>Servicios e infraestructuras para startups.</p>
-                </a>
-                <a href="empresas.html" class="tarjeta">
-                    <h2>Empresas</h2>
-                    <p>Conoce nuestras ikasempresas y sus proyectos.</p>
-                </a>
-                <a href="sostenibilidad.html" class="tarjeta">
-                    <h2>Sostenibilidad</h2>
-                    <p>Propuestas verdes y soluciones IoT.</p>
-                </a>
-                <a href="ofertas.html" class="tarjeta">
-                    <h2>Ofertas de trabajo</h2>
-                    <p>Encuentra oportunidades laborales del sector.</p>
-                </a>
-                <a href="contacto.html" class="tarjeta">
-                    <h2>Contacto</h2>
-                    <p>Envíanos tus dudas o solicita más información.</p>
-                </a>
-            </div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido">
+        <section>
+            <p class="eslogan">Un espacio para el crecimiento, la innovación y el emprendimiento tecnológico.</p>
+            <h1>¿Qué ofrecemos?</h1> 
+            <p>Servicios (instalaciones, servicios informáticos...) que da el vivero a las empresas que se instalen en él.</p>
+            <p>El vivero educativo inmersivo ofrece instalaciones modernas, servicios informáticos avanzados y asesoramiento especializado para startups tecnológicas centradas en educación, neurodiversidad y realidad virtual.</p>
+            <br>
+            <ul>
+                <li><a href="diseño.html">Diseño y puesta en marcha infraestructura de red</a></li>
+                <li><a href="instalacion.html">Instalación equipamiento informático y almacenamiento</a></li>
+                <li><a href="configuracion.html">Instalación y configuración de los servicios de red del vivero</a></li>
+                <li><a href="incidencias.html">Incidencias instalación</a></li>
+                <li><a href="aws.html">Despliegue de aplicaciones en AWS</a></li>
+            </ul>
         </section>
-    </main>
 
-    <!-- ===================== PIE DE PÁGINA ===================== -->
-    <footer>
-        <img src="img/logo-vivero.png" alt="Logo del vivero" class="footer-logo">
-        <p>© 2025 Vivero de Empresas | Autor: <strong>[Alumno X]</strong></p>
-        <p><a href="#">Aviso de protección de datos</a></p>
-        <div class="redes">
-            <a href="#"><img src="img/icon-facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="img/icon-twitter.svg" alt="Twitter"></a>
-            <a href="#"><img src="img/icon-instagram.svg" alt="Instagram"></a>
-        </div>
-    </footer>
+    <!-- Botones explicativos de cada sección -->
+        <section class="secciones">
+            <h3>Explora nuestras áreas clave</h3>
+            <a href="principal.html" class="boton">¿Qué ofrecemos?</a>
+            <p>Es la página que se carga por defecto. Se explican los servicios
+                (instalaciones, servicios informáticos...) que da el vivero a las empresas que se instalen en él.</p>
+            <a href="empresas.html" class="boton">Empresas</a>
+            <p>Se incluirá información sobre la ikasempresa del equipo (misión, logotipo, vídeo promocional) y el diseño del modelo de negocio. (P7)</p>
+            <a href="sostenibilidad.html" class="boton">Sostenibilidad</a>
+            <p>Se incluirá la propuesta de mejora de sostenibilidad del vivero (P8) y análisis de las soluciones IoT. (P9)</p>
+            <a href="ofertas.html" class="boton">Ofertas de trabajo</a>
+            <p>Se incluirá varias ofertas de trabajo encontradas del sector y la entrevista de trabajo. (P6)</p>
+            <a href="contacto.html" class="boton">Contacto</a>
+            <p>Incluirá un formulario de contacto para las posibles empresas interesadas en alojarse en el vivero.</p>
+        </section>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <div class="footer-logo">
+                <img src="img/LogoVivero.png" alt="Logo del vivero" class="footer-logo" />
+            </div>
+            <p>© 2025 Vivero Educativo Inmersivo | Protección de datos garantizada</p>
+            <p>Autor: Nombre</p>
+            <br>
+            <div class="redes">
+                <a href="#"><img src="img/iconoFacebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="img/iconoTwiter.png" alt="Twitter" /></a>
+                <a href="#"><img src="img/iconoInstagram.png" alt="Instagram" /></a>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>

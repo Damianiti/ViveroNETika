@@ -1,0 +1,168 @@
+/* Reset global para evitar inconsistencias entre navegadores */
+* {
+  margin: 0;                           /* Elimina márgenes predeterminados */
+  padding: 0;                          /* Elimina rellenos predeterminados */
+  box-sizing: border-box;              /* Incluye borde y padding en el tamaño total del elemento */
+}
+
+/* Estilo base del cuerpo */
+body {
+  height: 100%;                        /* Ocupa toda la altura de la ventana */
+  font-family: 'Segoe UI', sans-serif; /* Fuente moderna y legible */
+  font-size: 20px;                     /* Tamaño base aumentado para mejor legibilidad */
+  background-color: #121212;         /* Fondo principal oscuro */
+  color: #F5F5F5;                    /* Texto claro para contraste */
+  line-height: 1.6;                    /* Mejora la legibilidad del texto */
+}
+
+/* Encabezado superior fijo */
+.Encabezado {
+  display: flex;                       /* Distribuye logo y navegación en fila */
+  justify-content: space-between;      /* Espacia los elementos a los extremos */
+  align-items: center;                 /* Centra verticalmente */
+  background-color: #1A1A1A;         /* Fondo oscuro secundario */
+  padding: 0;                          /* Espaciado interno */
+  box-shadow: 0 0 10px #00B2D9;      /* Sombra azul suave */
+  top: 0;                              /* Pegado al borde superior */
+}
+
+/* Logo del vivero */
+.logo img {
+  width: 200px;                         /* Tamaño fijo del logo aumentado */
+  height: auto;                         /* Mantiene proporción original */
+}
+
+/* Menú de navegación principal */
+.menu ul {
+  list-style: none;                     /* Elimina viñetas */
+  display: flex;                        /* Muestra enlaces en fila */
+  gap: 1rem;                            /* Espacio entre enlaces */
+  justify-content: center;              /* Centra horizontalmente */
+}
+
+.menu ul li a {
+  color: #00B2D9;                     /* Azul accesible para enlaces */
+  text-decoration: none;                /* Sin subrayado */
+  font-weight: bold;                    /* Texto en negrita */
+  font-size: 18px;                      /* Tamaño aumentado para accesibilidad */
+  padding: 0.25rem 0.75rem;                 /* Espaciado interno */
+  transition: color 0.3s ease;          /* Transición suave al pasar el cursor */
+}
+
+.menu ul li a:hover {
+  color: white;                       /* Blanco al pasar el cursor */
+  text-shadow: 0 0 5px #00B2D9;       /* Sombra azul suave para resaltar */
+}
+
+/* Contenido principal de la página */
+.contenido {
+  display: flex;                         /* Permite estructura flexible */
+  flex-direction: column;                /* Apila elementos verticalmente */
+  min-height: 100vh;                     /* Ocupa toda la altura disponible */
+  padding: 2rem;                         /* Espaciado interno */
+}
+
+/* Sección principal del vivero */
+.contenido section {
+  background-color: #1A1A1A;           /* Fondo oscuro secundario */
+  padding: 2rem;                         /* Espaciado interno amplio */
+  border-radius: 10px;                   /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0,178,217,0.1); /* Sombra azul tenue */
+  margin-bottom: 2rem;                   /* Separación inferior entre secciones */
+}
+
+/* Título principal de la sección */
+.contenido h1 {
+  font-size: 40px;                       /* Tamaño muy destacado */
+  color: #00B2D9;                      /* Azul accesible */
+  text-shadow: 0 0 8px #00B2D9;        /* Sombra luminosa para resaltar */
+  margin-bottom: 1rem;                   /* Espacio inferior */
+}
+
+/* Eslogan */
+.eslogan {
+  text-align: center;                    /* Centrado */
+  font-size: 28px;                       /* Tamaño medio aumentado */
+  font-style: italic;                    /* Estilo cursiva */
+  color: #CCCCCC;                      /* Gris claro para contraste suave */
+  margin-bottom: 1.5rem;                 /* Separación inferior */
+}
+
+/* Lista de servicios */
+.contenido ul {
+  list-style: none;                      /* Elimina viñetas */
+  padding-left: 0;                       /* Elimina sangría izquierda */
+}
+
+.contenido ul li {
+  background-color: #121212;           /* Fondo oscuro coherente */
+  border-left: 4px solid #00B2D9;      /* Línea azul decorativa a la izquierda */
+  padding: 0.75rem 1rem;                 /* Espaciado interno */
+  margin-bottom: 0.75rem;                /* Separación entre elementos */
+  border-radius: 5px;                    /* Bordes redondeados */
+  color: #F5F5F5;                      /* Texto claro */
+  font-size: 20px;                       /* Tamaño aumentado para legibilidad */
+}
+
+.contenido ul li a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+.secciones {
+  background-color: #121212;           /* Fondo oscuro coherente */
+  border-left: 4px solid #00B2D9;      /* Línea azul decorativa a la izquierda */
+  padding: 0.75rem 1rem;                 /* Espaciado interno */
+  margin-bottom: 0.75rem;                /* Separación entre elementos */
+  border-radius: 5px;                    /* Bordes redondeados */
+  color: #F5F5F5;                      /* Texto claro */
+  font-size: 20px;                       /* Tamaño aumentado para legibilidad */
+}
+
+.secciones h3 {
+  font-size: 30px;                       /* Tamaño muy destacado */
+  color: #00B2D9;                      /* Azul accesible */
+  text-shadow: 0 0 8px #00B2D9;        /* Sombra luminosa para resaltar */
+  margin-bottom: 1rem;                   /* Espacio inferior */
+}
+
+.secciones a {
+  text-decoration: none;                 /* Quitar decoración de link */
+  padding: 0.75rem 1rem;                 /* Espaciado interno */
+  margin-bottom: 0.75rem;                /* Separación entre elementos */
+  border-radius: 5px;                    /* Bordes redondeados */
+  color: #00B2D9;                      /* Azul accesible */
+  font-size: 20px;                       /* Tamaño aumentado para legibilidad */
+}
+
+/* Pie de página con redes sociales */
+footer {
+  background-color: #1A1A1A;           /* Fondo oscuro secundario */
+  color: #CCCCCC;                      /* Texto gris claro */
+  text-align: center;                    /* Centrado horizontal */
+  padding: 1rem;                         /* Espaciado interno */
+  border-top: 1px solid #333;          /* Línea divisoria superior */
+  font-size: 18px;                       /* Tamaño aumentado para lectura cómoda */
+  margin-top: auto;                      /* Empuja el footer al fondo */
+}
+
+/* Logo en el footer */
+.footer-logo img {
+  height: 80px;                          /* Tamaño reducido del logo */
+  margin-bottom: 0.1rem;                 /* Espacio inferior */
+}
+
+/* Enlaces a redes sociales */
+.redes a {
+  color: #00B2D9;                      /* Azul accesible para enlaces */
+  text-decoration: none;                 /* Sin subrayado */
+  margin: 0 0.5rem;                      /* Espacio horizontal entre enlaces */
+  font-weight: bold;                     /* Texto en negrita */
+  font-size: 20px;                       /* Tamaño aumentado para accesibilidad */
+  transition: color 0.3s ease;           /* Transición suave */
+}
+
+.redes a:hover {
+  color: white;                        /* Blanco al pasar el cursor */
+  text-shadow: 0 0 5px #00B2D9;        /* Sombra azul suave para resaltar */
+}
