@@ -121,6 +121,16 @@ main section {
   font-size: 20px;                          /* Tamaño aumentado para legibilidad */
 }
 
+.menupag {
+  background-color: #f1f5f9; /* Fondo claro coherente */
+  border-left: 4px solid #00b4d8; /* Línea azul decorativa a la izquierda */
+  padding: 0.75rem 1rem; /* Espaciado interno */
+  margin-bottom: 0.75rem; /* Separación entre elementos */
+  border-radius: 5px; /* Bordes redondeados */
+  color: #333; /* Texto oscuro */
+  font-size: 20px; /* Tamaño aumentado para legibilidad */
+}
+
 /* Secciones destacadas */
 .secciones {
   background-color: #f1f5f9;              /* Fondo claro coherente */
@@ -162,6 +172,22 @@ button {
 
 button:hover {
   background-color: #0097a7;                /* Color del botón cuando el usuario pasa el ratón por encima */
+}
+
+/* Boton inicio*/
+button {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0097a7;
 }
 
 /* Pie de página con redes sociales */
