@@ -111,6 +111,20 @@ main section {
   color: #333;                            /* Texto oscuro */
 }
 
+.contenido img {
+  width: 200px;                              /* Establece el ancho de la imagen a 200 píxeles */
+  height: auto;                              /* Ajusta la altura automáticamente para mantener la proporción original */
+  display: block;                            /* Elimina el espacio extra debajo de la imagen (por defecto es inline) */
+  margin: 20px auto;                         /* Aplica un margen de 20px arriba y abajo, y centra horizontalmente */
+  border: 2px solid #333;                  /* Añade un borde gris oscuro de 2 píxeles alrededor de la imagen */
+  border-radius: 8px;                        /* Redondea las esquinas de la imagen con un radio de 8 píxeles */
+}
+
+.contenido h3 {
+  text-align: center;                         /* Centra el texto horizontalmente dentro del elemento h3 */
+  margin: 20px 0;                             /* Añade espacio arriba y abajo del h3 para que no esté pegado a otros elementos */
+}
+
 .menupag {
   background-color: #f1f5f9;              /* Fondo claro coherente */
   border-left: 4px solid #00b4d8;         /* Línea azul decorativa a la izquierda */
@@ -119,16 +133,6 @@ main section {
   border-radius: 5px;                       /* Bordes redondeados */
   color: #333;                            /* Texto oscuro */
   font-size: 20px;                          /* Tamaño aumentado para legibilidad */
-}
-
-.menupag {
-  background-color: #f1f5f9; /* Fondo claro coherente */
-  border-left: 4px solid #00b4d8; /* Línea azul decorativa a la izquierda */
-  padding: 0.75rem 1rem; /* Espaciado interno */
-  margin-bottom: 0.75rem; /* Separación entre elementos */
-  border-radius: 5px; /* Bordes redondeados */
-  color: #333; /* Texto oscuro */
-  font-size: 20px; /* Tamaño aumentado para legibilidad */
 }
 
 /* Secciones destacadas */
@@ -158,6 +162,8 @@ main section {
   font-size: 20px;                          /* Tamaño aumentado para legibilidad */
 }
 
+/* Formulario de contacto */
+
 /* Boton inicio*/
 button {
   background-color: #00b4d8;               /* Color de fondo del botón */
@@ -168,26 +174,13 @@ button {
   border-radius: 6px;                        /* Bordes redondeados */
   cursor: pointer;                           /* Al pasar el ratón cambia a icono de "mano" */
   transition: background-color 0.3s;         /* Transición suave al cambiar el color de fondo */
+  display: block;                            /* Hace que el boton sea un bloque */
+  margin: 20px auto;                         /* Lo centra horizontalmente */
+  text-decoration: none;                     /* Quita el subrayado */
 }
 
 button:hover {
   background-color: #0097a7;                /* Color del botón cuando el usuario pasa el ratón por encima */
-}
-
-/* Boton inicio*/
-button {
-  background-color: #00b4d8;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0097a7;
 }
 
 /* Pie de página con redes sociales */
