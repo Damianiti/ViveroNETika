@@ -163,6 +163,30 @@ main section {
 }
 
 /* Formulario de contacto */
+.formulario-contacto {
+  width: 100%;
+  max-width: 600px;                          /* Ancho máximo del formulario */
+  margin: 0 auto;                            /* Centra el formulario en la página */
+}
+
+.menupag {
+  margin: 15px 0;                            /* El bloque menupag se queda fijo en su flujo */
+}
+
+.menupag label {
+  display: block;                            /* Etiqueta ocupa toda la línea */
+  text-align: center;                        /* Texto centrado */
+}
+
+.menupag input,
+.menupag textarea,
+.menupag button {
+  width: 300px;                              /* Ancho fijo de los campos */
+  max-width: 100%;                           /* Que no se desborde en pantallas pequeñas */
+  padding: 8px;                              /* El texto no queda pegado al borde */
+  margin: 5px auto;                          /* Centra el campo dentro del bloque */
+  display: block;                            /* Cada campo en su propia línea */
+}
 
 /* Boton inicio*/
 button {
