@@ -207,6 +207,10 @@ button:hover {
   background-color: #0097a7;                /* Color del botón cuando el usuario pasa el ratón por encima */
 }
 
+a {
+  text-decoration: none;                      /* Quita el subrayado del enlace */
+}
+
 /* Pie de página con redes sociales */
 footer {
   background-color: #023e8a;               /* Fondo azul oscuro */
