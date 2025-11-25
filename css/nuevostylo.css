@@ -81,6 +81,10 @@ main section {
   margin-bottom: 1rem;                   /* Espacio inferior */
 }
 
+.contenido p {
+  text-align: center;                     /* Centrado del texto*/
+}
+
 /* Eslogan */
 .eslogan {
   text-align: center;                    /* Centrado */
