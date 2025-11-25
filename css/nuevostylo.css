@@ -157,6 +157,10 @@ main section {
   margin-bottom: 1rem;                      /* Espacio inferior */
 }
 
+.index {
+  text-align: center;                       /* Centra el texto horizontalmente dentro del elemento h2 */
+}
+
 .secciones a {
   text-decoration: none;                    /* Quitar decoración de link */
   padding: 0.75rem 1rem;                    /* Espaciado interno */
